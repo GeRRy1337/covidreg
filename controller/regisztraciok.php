@@ -4,7 +4,7 @@ $sikeres=false;
 if(isset($_POST['regForm'])){
     if(strlen($_POST['taj'])!=11){
         $errors[]="Hibás tajszám!";
-    }elseif(checkTaj($_POST['taj'],$conn)){
+    }elseif(regisztracio::checkTaj($_POST['taj'],$conn)){
         $errors[]="Ez a taj már regisztrálva van!";
     }
     if( date_diff( date_create($_POST['szul']),date_create("now"))->y<14 ){

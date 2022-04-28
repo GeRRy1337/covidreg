@@ -8,7 +8,7 @@
             </div>
             <div class="form-divs">
                 <label for="taj">Taj:</label>
-                <input type="text" name="taj" id="taj" maxlength="11" minlength="11" required>
+                <input type="text" name="taj" id="taj" maxlength="11" required>
             </div>
             <div class="form-divs">
                 <label for="email">Email:</label>

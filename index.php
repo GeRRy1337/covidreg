@@ -1,10 +1,11 @@
 <?php
 require "includes/db.inc.php";
 
-require "includes/functions.php";
 include "includes/htmlheader.php";
 include "includes/menu.inc.php";
+
 include "model/regisztracio.php"; 
+
 $page="regisztraciok";
 if(isset($_REQUEST['page'])){
     if(file_exists("controller/".$_REQUEST['page'].".php")){
